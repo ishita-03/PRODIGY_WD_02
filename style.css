@@ -1,0 +1,34 @@
+:root{
+  --bg:#FBFAFF;
+  --card:#ffffff;
+  --accent:#6D5BD0; /* lavender accent */
+  --muted:#6b6b7a;
+  --glass: rgba(109,91,208,0.08);
+}
+
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
+html,body{height:100%}
+body{background:linear-gradient(180deg,#fff #f6f4ff 40%);display:flex;align-items:center;justify-content:center;padding:28px}
+
+.wrap{width:100%;max-width:420px;margin:auto}
+
+.title{text-align:center;font-size:1.4rem;color:var(--accent);margin-bottom:16px;font-weight:700}
+
+.clock-card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 14px 40px rgba(13,21,60,0.06)}
+.display{font-size:2rem;text-align:center;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(109,91,208,0.03), rgba(109,91,208,0.02));margin-bottom:14px;color:#222;font-weight:600}
+
+.controls{display:flex;gap:10px;justify-content:center}
+.btn{border:none;padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer;background:transparent;color:var(--muted);box-shadow:inset 0 0 0 1px rgba(0,0,0,0.04)}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#a98cff);color:#fff;box-shadow:0 8px 20px rgba(109,91,208,0.18)}
+.btn:disabled{opacity:0.5;cursor:not-allowed}
+
+.laps-section{margin-top:18px}
+.small-heading{font-size:0.95rem;color:var(--accent);margin-bottom:10px;text-align:left}
+.laps{list-style:none;max-height:210px;overflow:auto;padding:6px;border-radius:8px;background:var(--glass)}
+.laps li{padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.6);margin-bottom:8px;font-weight:500;color:#222;display:flex;justify-content:space-between;align-items:center}
+
+/* small screens */
+@media(max-width:420px){
+  .display{font-size:1.6rem;padding:10px}
+  .btn{padding:9px 10px;font-size:0.95rem}
+}
