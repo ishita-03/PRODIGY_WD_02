@@ -1,2 +1,2 @@
 # PRODIGY_WD_02
-Task 2 for my ProdigyInfoTech internship
+TAn interactive and user-friendly Stopwatch Web Application - Task 2 of Web Development Internship at Prodigy InfoTech.
