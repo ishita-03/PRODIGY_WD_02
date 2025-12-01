@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stopwatch Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1 class="title">STOPWATCH</h1>
+
+    <div class="clock-card">
+      <div id="display" class="display" aria-live="polite">00:00:00</div>
+
+      <div class="controls">
+        <button id="startBtn" class="btn primary" aria-pressed="false">Start</button>
+        <button id="lapBtn" class="btn" disabled>Lap</button>
+        <button id="resetBtn" class="btn" disabled>Reset</button>
+      </div>
+    </div>
+
+    <section class="laps-section">
+      <h2 class="small-heading">Laps</h2>
+      <ul id="laps" class="laps" aria-live="polite"></ul>
+    </section>
+
+    <footer class="footer">My Task 2 — Stopwatch Web Application • Ishita Bhowmick</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
